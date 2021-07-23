@@ -66,8 +66,8 @@ There are multiple options, from the most DIY to commercial already calibrated t
 ## Control and monitorization Dashboard (NOC based Node-RED)
 The TinyGS _backoffice_ publishes two _topics_ with information about your station. This control application is based on the subscription to them:
 ```
-tinygs/[user]/[nombre de la estación]/cmnd/begin
-tinygs/[user]/[nombre de la estación]/cmnd/frame/0
+tinygs/[user]/[station ID]/cmnd/begin
+tinygs/[user]/[station ID]/cmnd/frame/0
 ```
 
 [Node-RED](https://nodered.org/) is a visual programming tool. It graphically shows relationships between objects (nodes) that are functions that transform the message that arrives from the preceding nodes (a flow).
@@ -103,6 +103,6 @@ https://maker.ifttt.com/trigger/TinyGS/with/key/[clave de IFTTT]?value1={{{paylo
 ```
 The service to configure is simple. We will use the Webhooks component to capture the event and the notifications so that the notice is triggered on our device: mobile, smartwatch ...
 
-### Links and references
+## Links and references
 1. [SPACK instance of Node-red IDE:](http://domohome.ddns.jazztel.es:48053)
 2. [SPACK instance of Node-red User Interface:](http://domohome.ddns.jazztel.es:48053/ui)
